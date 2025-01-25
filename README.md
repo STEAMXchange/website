@@ -1,4 +1,4 @@
-This is a NextJS website + React + MUI website
+This is a [NextJS](https://nextjs.org) website + [React](https://React.dev) + [MUI](https://mui.com) website
 
 ## Getting Started
 
