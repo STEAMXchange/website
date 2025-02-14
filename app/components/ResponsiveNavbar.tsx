@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <Box
             component="img"
-            src="steamfinal.png"
+            src="src/public/steamxlogo.svg"
             alt="App Logo"
             sx={{
               display: { xs: "none", md: "flex" },

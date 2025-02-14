@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import ResponsiveAppBar from "@/components/ResponsiveNavbar";
 
 const geistSans = Geist({
@@ -25,9 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ResponsiveAppBar/>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <AppRouterCacheProvider> {/* FIX: Wrap entire app */}
+          <ResponsiveAppBar />
+          {children}
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
